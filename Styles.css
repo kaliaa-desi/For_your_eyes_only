@@ -1,0 +1,218 @@
+/* Midnight Rose Theme */
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #000000, #2c2c2c, #1a1a1a);
+    color: #f4e1d2;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+}
+
+nav a {
+    color: #d4af37;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4e1d2;
+}
+
+/* Particles */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    background: #d4af37;
+    border-radius: 50%;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); }
+    100% { transform: translateY(-100vh) rotate(360deg); }
+}
+
+/* Home Page */
+.home-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://via.placeholder.com/1920x1080?text=Romantic+Background') no-repeat center/cover;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #d4af37;
+    text-shadow: 0 0 20px #d4af37;
+}
+
+.quote {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
+}
+
+.enter-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #d4af37;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 0 15px #d4af37;
+}
+
+.enter-button:hover {
+    background: #f4e1d2;
+    box-shadow: 0 0 25px #f4e1d2;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Gallery */
+.gallery-container {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Quiz */
+.quiz-container {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.question {
+    margin: 20px 0;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #d4af37;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #f4e1d2;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Notes */
+.notes-container {
+    padding: 100px 20px;
+}
+
+.note {
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #d4af37;
+}
+
+.shayri {
+    font-style: italic;
+    color: #f4e1d2;
+}
+
+.joke {
+    margin-top: 10px;
+    color: #d4af37;
+}
+
+/* Proposal */
+.proposal-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.proposal-container h1 {
+    font-size: 3rem;
+    color: #d4af37;
+    text-shadow: 0 0 20px #d4af37;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+#no-button {
+    position: relative;
+}
+
+#celebration {
+    font-size: 2rem;
+    color: #f4e1d2;
+}
