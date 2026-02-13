@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Well Do You Know Us?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="notes.html">Notes</a>
+    </nav>
+    <div class="particles" id="particles"></div>
+    <div class="quiz-container">
+        <h1>How Well Do You Know Us?</h1>
+        <div id="quiz">
+            <div class="question" id="q1">
+                <p>What is my favorite color?</p>
+                <button onclick="answer('q1', 'blue')">Blue</button>
+                <button onclick="answer('q1', 'red')">Red</button>
+                <button onclick="answer('q1', 'green')">Green</button>
+            </div>
+            <div class="question hidden" id="q2">
+                <p>Where did we first meet?</p>
+                <button onclick="answer('q2', 'park')">The Park</button>
+                <button onclick="answer('q2', 'cafe')">A Cafe</button>
+                <button onclick="answer('q2', 'party')">A Party</button>
+            </div>
+            <div class="question hidden" id="q3">
+                <p>What’s my go-to comfort food?</p>
+                <button onclick="answer('q3', 'pizza')">Pizza</button>
+                <button onclick="answer('q3', 'pasta')">Pasta</button>
+                <button onclick="answer('q3', 'sushi')">Sushi</button>
+            </div>
+            <div class="question hidden" id="q4">
+                <p>What’s our inside joke about?</p>
+                <button onclick="answer('q4', 'cats')">Cats</button>
+                <button onclick="answer('q4', 'dancing')">Dancing</button>
+                <button onclick="answer('q4', 'movies')">Movies</button>
+            </div>
+            <div class="question hidden" id="q5">
+                <p>How many times have we watched our favorite movie together?</p>
+                <button onclick="answer('q5', '5')">5</button>
+                <button onclick="answer('q5', '10')">10</button>
+                <button onclick="answer('q5', '3')">3</button>
+            </div>
+        </div>
+        <div id="result" class="hidden">
+            <p id="feedback"></p>
+            <a href="proposal.html" class="enter-button">Continue to the Big Question</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
